@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChatGPT Auto-Send</title>
+    <script>
+        function autoSend() {
+            setTimeout(() => {
+                let sendButton = document.querySelector('button[data-testid="send-button"]');
+                if (sendButton) {
+                    sendButton.click();
+                }
+            }, 2000); // 2-second delay to allow ChatGPT to load
+        }
+    </script>
+</head>
+<body onload="autoSend()">
+    <h1>ChatGPT Auto-Send Running...</h1>
+</body>
+</html>
